@@ -112,6 +112,7 @@ resource "azurerm_virtual_machine" "catapp" {
   delete_os_disk_on_termination = "true"
 
   Department = "devops"
+  Billable = "true"
 
   storage_image_reference {
     publisher = var.image_publisher
