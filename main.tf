@@ -113,6 +113,11 @@ resource "azurerm_virtual_machine" "catapp" {
 
   #Department = "devops"
   #Billable = "true"
+  ### List of mandatory tags ###
+  mandatory_tags = [
+    "Billable",
+    "Department",
+  ]
 
   storage_image_reference {
     publisher = var.image_publisher
